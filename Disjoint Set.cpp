@@ -9,7 +9,7 @@ void make(int i)
 
 int find(int i){
 	if(parent[i] == i) return i;
-	else parent[i] = find(parent[i]);
+	else return parent[i] = find(parent[i]);
 }
 
 void Union(int a, int b){
