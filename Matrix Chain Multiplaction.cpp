@@ -9,7 +9,7 @@ int func(int arr[], int l, int r){
   int temp;
   
   for(int k = l; k < r; k++){
-    temp = func9=(arr, l, k) + func(arr, k + 1, r) + arr[l] * arr[k] * arr[r];
+    temp = func(arr, l, k) + func(arr, k + 1, r) + arr[l] * arr[k] * arr[r];
     res = min(temp, res);
   }
   return res;
