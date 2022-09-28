@@ -30,6 +30,7 @@ ll power(ll a, ll b){
 	while(b > 0){
 		if(b & 1){
 			res = (res * a) % mod;
+			b = b - 1;
 		}
 		a = (a *1LL* a) % mod;
 		b = b >> 1;
